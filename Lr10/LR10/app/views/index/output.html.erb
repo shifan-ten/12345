@@ -1,0 +1,21 @@
+<style>
+table {
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+table td, table th {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+<h1>Ответ сервера</h1>
+
+<br><br>
+
+<!--Это значит, что текст из переменной result будет отображен как HTML-разметка-->
+<%= render inline: @result %>

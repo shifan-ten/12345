@@ -1,0 +1,11 @@
+<h2>Результат:</h2>
+
+<% if @error %>
+    <p>
+        <%= @error %>
+    </p>
+<% else %>
+    <%= @result.each do |r| %>
+        <%= (r.to_i**0.5) %> - <%= r %>
+    <% end %>
+<% end %>

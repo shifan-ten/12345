@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xslt"?>
+<objects type="array">
+<object>
+<elem>0</elem>
+<binary type="integer">0</binary>
+</object>
+<object>
+<elem>1</elem>
+<binary type="integer">1</binary>
+</object>
+<object>
+<elem>2</elem>
+<binary type="integer">4</binary>
+</object>
+<object>
+<elem>3</elem>
+<binary type="integer">9</binary>
+</object>
+<object>
+<elem>11</elem>
+<binary type="integer">121</binary>
+</object>
+<object>
+<elem>22</elem>
+<binary type="integer">484</binary>
+</object>
+<object>
+<elem>26</elem>
+<binary type="integer">676</binary>
+</object>
+<object>
+<elem>101</elem>
+<binary type="integer">10201</binary>
+</object>
+<object>
+<elem>111</elem>
+<binary type="integer">12321</binary>
+</object>
+<object>
+<elem>121</elem>
+<binary type="integer">14641</binary>
+</object>
+<object>
+<elem>202</elem>
+<binary type="integer">40804</binary>
+</object>
+<object>
+<elem>212</elem>
+<binary type="integer">44944</binary>
+</object>
+<object>
+<elem>264</elem>
+<binary type="integer">69696</binary>
+</object>
+<object>
+<elem>307</elem>
+<binary type="integer">94249</binary>
+</object>
+<object>
+<elem>836</elem>
+<binary type="integer">698896</binary>
+</object>
+</objects>

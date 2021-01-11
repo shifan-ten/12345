@@ -1,0 +1,56 @@
+<style>
+table {
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+table td, table th {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+<h2>
+    Задание:
+</h2>
+<p>
+    Написать программу, определяющую количество целых чисел ≤ n (n
+вводится с клавиатуры), квадрат которых является палиндромом. Например: 26^2 = 676. Вывести на печать числа, квадраты и их количество.
+</p>
+<h2>
+    Введите число N
+</h2>
+<form method="get">
+    <input type="number" name="n" value="1 -1 7 -2 -3"/>
+    <input type="submit">
+</form>
+</br>
+<h2>
+ Ответ: <%= @ans %>
+</h2>
+</br>
+
+<table>
+    <tr>
+        <th>
+            Числа
+        </th>
+        <% @intres.each do |r| %>
+            <td>
+                <%= r %>
+            </td>
+        <% end %>
+    </tr>
+    <tr>
+        <th>
+            Квадраты
+        </th>
+        <% @result.each do |r| %>
+            <td>
+                <%= r %>
+            </td>
+        <% end %>
+    </tr>
+</table>

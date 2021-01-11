@@ -1,0 +1,13 @@
+<h2>Страница для ввода</h2>
+<%= form_tag("/method/view", :method => "get") do %>
+  <%= label_tag("Число:") %>
+  <%= text_field_tag(:number, "1000") %> <br/>
+  <br/>
+  <%= submit_tag("Calc result") %>
+<% end %>
+
+
+<%= form_tag("/method/results.xml", :method => "get") do %>
+<hr>
+  <%= submit_tag("return DB contents") %>
+<% end %>

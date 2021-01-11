@@ -1,0 +1,56 @@
+<%= render 'head' %>
+
+<main role="main" class="container">
+  <%= render 'head_profile' %>
+  <% if @user_rev.nil? %>
+  <div class="price container">
+    <div class="row">
+      <h4 class="col-4 body-title"><%= t('profile.current_balance') %>:</h4>
+      <h4 class="col-4 body-text"><%= @user.price&.round(2) %>$</h4>
+    </div>
+    <div class="row">
+      <h4 class="col-4 body-title"><%= t('profile.add') %>:</h4>
+      <h4 class="col-4 body-text"><span class=""><%= link_to '+', add_path, class: 'text-dark' %></span></h4>
+    </div>
+  </div>
+  <% else %>
+    <div class="price container">
+      <div class="row">
+        <h4 class="col-4 body-title"><%= t('profile.username') %>:</h4>
+        <h4 class="col-4 body-text"><%= @user_rev.username %></h4>
+      </div>
+    </div>
+  <% end %>
+
+
+  <h4 class="title-review"><%= t('profile.reviews') %></h4>
+
+  <% @reviews.each do |review| %>
+    <%= render 'review', review: review, user: review.reviewer %>
+  <% end %>
+
+  <% unless @user_rev.nil? %>
+  <div class="row container d-flex justify-content-between">
+
+    <div class="body-page col-12">
+      <%= form_for :review, url: {:controller => 'reviews', action: 'create'} do |f| %>
+
+        <div class="form-group">
+          <%= f.label :'Leave a review', class: 'col-form-label' %>
+          <div class="">
+            <%= f.text_area :text, class: 'form-control', placeholder: 'Text Description', rows: '8' %>
+          </div>
+        </div>
+
+        <%= f.hidden_field :user_id, value: @user_rev.id %>
+        <%= f.submit :'REVIEW', class: 'btn btn-primary mb-2 btn-dark reg-btn' %>
+      <% end %>
+    </div>
+
+
+  </div>
+  <% end %>
+
+</main>
+
+<%#= render 'footer' %>

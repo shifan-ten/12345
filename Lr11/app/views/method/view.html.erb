@@ -1,0 +1,18 @@
+<h3>Страница для вывода результатов подсчета</h3>
+<p id="result">
+  <!-- <%= debug(@result) %> -->
+  <% if @result.is_a?(String) %>
+  <%= @result%>
+  <%else%>
+  <table>
+    <% @result.each_with_index do |elem, index| %>
+    <tr>
+      <td><%= index+1%></td>
+      <td><%= (elem.to_i**0.5).to_i %></td>
+      <td><%= elem%></td>
+
+    </tr>
+    <% end %>
+  </table>
+  <% end %>
+</p>

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link href="http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 40px;
+        }
+
+        main {
+            margin-top: 15px;
+        }
+
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .my-primary {
+            background-color: #4f0e66;
+            color: white;
+        }
+
+        h1 {
+            font-family: Italic;
+            color: rebeccapurple;
+        }
+
+        b {
+            color: tan;
+        }
+
+        .purp-background {
+            background-color: #4f0e66;
+            color:white;
+        }
+
+        .topreasons {
+            font-size: larger;
+            color: aqua;
+        }
+
+        .nottop {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    59
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="avatar.jpg"
+                     alt="avatar" width="150" height="150">
+            </div>
+            <div class="col-8">
+                <p>Дата: 08.12.2020</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <table>
+                        <tr>
+                            <td>Имя: </td>
+                            <td><input type="text" name="fname" /></td>
+                        </tr>
+                        <tr>
+                            <td>Фамилия: </td>
+                            <td><input type="text" name="lname" /></td>
+                        </tr>
+                        <tr>
+                            <td>Пол:</td>
+                            <td>
+                                <input type="radio" name="gender" value="М"> М
+                                <input type="radio" name="gender" value="Ж" /> Ж
+                                <input type="radio" name="gender" value="Дельфин"> Дельфин
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Эл. почта:</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Хотите спама? </td>
+                            <td><input type="checkbox" name="spam" /> Очень хочу!</td>
+                        </tr>
+                        <tr>
+                            <td>Пароль: </td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" class="btn btn-success purp-background" value="Отправить"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-4">
+                <table border="2" style="text-align:center">
+                    <tr>
+                        <th colspan="2" class="alert alert-success purp-background">Суббота</th>
+                    </tr>
+                    <tr>
+                        <th>чс</th>
+                        <th>зм</th>
+                    </tr>
+                    <tr>
+                        <td>(лек)Правоведение</td>
+                        <td>(лек)ТеорВер и МС</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center>(сем)Иностранный язык</center></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1> 10 самых правдоподобных причин не ходить на пары </h1>
+                <ul type="disk">
+                    <li><div class="topreasons"><b>Учусь</b> из дома</div></li>
+                    <li>Отключили воду</li>
+                    <li>Питомец <em>выбежал</em> за дверь</li>
+                    <li><div class="topreasons"><b>Особые</b> дни</div></li>
+                    <li>Семейные обстоятельства</li>
+                    <li>Заклинило гаражную дверь</li>
+                    <li><em>Вы подхватили</em> что-то <b>заразное</b></li>
+                    <li><div class="nottop">Погодные катастрофы</div></li>
+                    <li>Ключ сломался <em>в замке</em></li>
+                    <li>Расстройство желудка</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+</html>

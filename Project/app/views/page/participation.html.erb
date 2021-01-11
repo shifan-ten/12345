@@ -1,0 +1,11 @@
+<%= render 'head' %>
+<main role="main" class="d-flex justify-content-center container flex-column">
+  <%= render 'head_profile' %>
+
+  <% @descriptions.each do |description| %>
+    <%= render 'product', description: description, user: description.prod&.userr %>
+  <% end %>
+
+
+  </dev>
+</main>

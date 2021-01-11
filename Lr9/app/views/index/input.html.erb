@@ -1,0 +1,62 @@
+<style>
+table {
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+table td, table th {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+<script>
+    function show_result(data){
+        var result = document.getElementById("result");
+        var insertToHTML = "<table>";
+        arr = data.value_res;
+        insertToHTML += "<tr><th>Палиндромы</th>"
+		for (i = 0 ; i < arr.length; i++) {
+			insertToHTML += "<td>" + arr[i] + "</td>";
+		}
+	    insertToHTML += "</tr><tr><th>Сами числа</th>"
+		arr_int = data.value_intres;
+		for (i = 0 ; i < arr_int.length; i++) {
+			insertToHTML += "<td>" + arr_int[i] + "</td>";
+		}
+		insertToHTML += "</tr>"
+		result.innerHTML = insertToHTML + "<h3/>Result is: " + data.value_ans + "<h3/>";
+    }
+
+    handleAjaxSuccess = function (event) {
+        [data, status, xhr] = event.detail;
+        show_result(data);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector("#calc_form").addEventListener(
+            'ajax:success', handleAjaxSuccess)
+    })
+</script>
+<h2>
+    Задание:
+</h2>
+<p>
+    Написать программу, определяющую количество целых чисел ≤ n (n
+вводится с клавиатуры), квадрат которых является палиндромом. На-
+пример: 26^2 = 676. Вывести на печать числа, квадраты и их количество.
+</p>
+
+<h3>Страница для ввода</h3>
+<%= form_tag("/index/output.json", :method => "get", remote: true, id: 'calc_form') do %>
+    <%= label_tag("Number to check:") %>
+    <%= text_field_tag(:number) %>
+    <br/>
+    <%= submit_tag("Calc result") %>
+<% end %>
+
+<div id="result">
+
+	<!-- поле для асинхронного вывода результатов вычислений -->
+</div>

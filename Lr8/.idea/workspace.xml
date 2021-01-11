@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="194cad4d-70f3-4cd2-940e-b3fe1d2f2edd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/index_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/index_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index/input.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index/input.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index/output.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index/output.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/index_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/index_controller_test.rb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kEvRnUmLRssDituwTaxYPlAG6C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../LR9" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="194cad4d-70f3-4cd2-940e-b3fe1d2f2edd" name="Default Changelist" comment="" />
+      <created>1605278564937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605278564937</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="470" y="234" width="490" height="384" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605279122952">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="470" y="234" width="490" height="384" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1605279122952" />
+    <state x="503" y="187" width="424" height="478" key="FileChooserDialogImpl" timestamp="1607363847881">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="503" y="187" width="424" height="478" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1607363847881" />
+    <state x="334" y="121" width="762" height="610" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605595212351">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="334" y="121" width="762" height="610" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.860@0.0.1440.860" timestamp="1605595212351" />
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1605592511773">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="383" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1605592511773" />
+  </component>
+</project>
